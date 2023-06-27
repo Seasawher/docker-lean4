@@ -31,3 +31,26 @@ And run as following:
 ```bash
 docker compose up -d
 ```
+
+### Dev Container
+
+Create a `.devcontainer` directory in the root of your workspace and
+create a `devcontainer.json` file with the floowing contant.
+
+```json
+{
+    "name": "${containerWorkspaceFolder}",
+    "image": "ghcr.io/seasawher/lean:main",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            "settings": {},
+            // Add the IDs of extensions you want installed when the container is created.
+            "extensions": []
+        }
+    }
+}
+```
