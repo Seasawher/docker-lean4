@@ -1,3 +1,5 @@
-# TEST Build
+# Docker Lean4
 
-Test of github action to build and publish docker image.
+**This repository is under development**
+
+Docker image of lean4.  
