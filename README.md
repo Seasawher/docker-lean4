@@ -37,7 +37,7 @@ docker compose up -d
 Create a `.devcontainer` directory in the root of your workspace and
 create a `devcontainer.json` file with the floowing contant.
 
-```json
+```jsonc
 {
     "name": "${containerWorkspaceFolder}",
     "image": "ghcr.io/seasawher/lean:main",
