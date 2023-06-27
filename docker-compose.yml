@@ -4,6 +4,6 @@ services:
   lean4:
     build:
       context: .
-      dockerfile: elan/Dockerfile
+      dockerfile: Dockerfile
     stdin_open: true
     tty: true
