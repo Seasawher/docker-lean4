@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  lean4:
+    build:
+      context: .
+      dockerfile: elan/Dockerfile
+    stdin_open: true
+    tty: true
