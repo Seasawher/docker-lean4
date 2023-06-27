@@ -1,4 +1,4 @@
-# Docker Lean4
+# Lean4 Docker Image
 
 Docker image of lean4 theorem prover.
 
@@ -9,7 +9,7 @@ Docker image of lean4 theorem prover.
 Run the command to pull this image.
 
 ```bash
-docker pull ghcr.io/seasawher/docker-lean4:main
+docker pull ghcr.io/seasawher/docker-lean:main
 ```
 
 ### Docker Compose
