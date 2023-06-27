@@ -6,7 +6,7 @@ Docker image of lean4 theorem prover.
 
 ### Pull
 
-Run the command to pull this image.
+Run the command to pull this image. Currently, only the `lean4:nightly` version is supported.
 
 ```bash
 docker pull ghcr.io/seasawher/lean:main
