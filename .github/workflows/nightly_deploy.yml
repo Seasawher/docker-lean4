@@ -35,7 +35,6 @@ jobs:
       with:
         images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
         tags: |
-          type=schedule,pattern=nightly
           type=raw,value=nightly
 
     - name: Build and push
