@@ -9,7 +9,7 @@ Docker image of lean4 theorem prover. Currently, only the `lean4:nightly` versio
 Run the command to pull this image.
 
 ```bash
-docker pull ghcr.io/seasawher/lean:main
+docker pull ghcr.io/seasawher/lean4:main
 ```
 
 ### Docker Compose
@@ -21,7 +21,7 @@ version: "3.9"
 
 services:
   lean4:
-    image: ghcr.io/seasawher/lean:main
+    image: ghcr.io/seasawher/lean4:main
     stdin_open: true
     tty: true
 ```
@@ -40,7 +40,7 @@ create a `devcontainer.json` file with the following content.
 ```jsonc
 {
     "name": "${containerWorkspaceFolder}",
-    "image": "ghcr.io/seasawher/lean:main",
+    "image": "ghcr.io/seasawher/lean4:main",
     "features": {
         "ghcr.io/devcontainers/features/git:1": {}
     },
