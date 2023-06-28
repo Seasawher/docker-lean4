@@ -35,7 +35,7 @@ docker compose up -d
 ### Dev Container
 
 Create a `.devcontainer` directory in the root of your workspace and
-create a `devcontainer.json` file with the floowing contant.
+create a `devcontainer.json` file with the following content.
 
 ```jsonc
 {
