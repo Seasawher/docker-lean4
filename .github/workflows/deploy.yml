@@ -37,5 +37,5 @@ jobs:
       with:
         context: .
         push: ${{ github.event_name != 'pull_request' }}
-        tags: ${{ steps.meta.outputs.tags }}
+        tags: ${{ env.IMAGE_NAME }}:nightly
         labels: ${{ steps.meta.outputs.labels }}
