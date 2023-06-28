@@ -3,6 +3,9 @@ name: Docker Image Deploy
 on:
   push:
     branches: [ "main" ]
+  schedule:
+    # At the end of every day
+    - cron: "0 0 * * *"
 
 env:
   REGISTRY: ghcr.io
@@ -31,6 +34,9 @@ jobs:
       uses: docker/metadata-action@v4
       with:
         images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+        tags: |
+          type=schedule,pattern=nightly
+          type=raw,value=nightly
 
     - name: Build and push
       uses: docker/build-push-action@v4
