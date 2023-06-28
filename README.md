@@ -1,6 +1,6 @@
-# Docker Lean4
+# Lean4 Docker Image
 
-Docker image of lean4 theorem prover.
+Docker image of lean4 theorem prover. Currently, only the `lean4:nightly` version is supported.
 
 ## Getting Started
 
@@ -9,7 +9,7 @@ Docker image of lean4 theorem prover.
 Run the command to pull this image.
 
 ```bash
-docker pull ghcr.io/seasawher/docker-lean4:main
+docker pull ghcr.io/seasawher/lean4:nightly
 ```
 
 ### Docker Compose
@@ -21,7 +21,7 @@ version: "3.9"
 
 services:
   lean4:
-    image: seasawher/docker-lean4:main
+    image: ghcr.io/seasawher/lean4:nightly
     stdin_open: true
     tty: true
 ```
@@ -35,12 +35,12 @@ docker compose up -d
 ### Dev Container
 
 Create a `.devcontainer` directory in the root of your workspace and
-create a `devcontainer.json` file with the floowing contant.
+create a `devcontainer.json` file with the following content.
 
-```json
+```jsonc
 {
     "name": "${containerWorkspaceFolder}",
-    "image": "ghcr.io/seasawher/lean:main",
+    "image": "ghcr.io/seasawher/lean4:nightly",
     "features": {
         "ghcr.io/devcontainers/features/git:1": {}
     },
