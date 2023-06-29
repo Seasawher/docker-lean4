@@ -4,10 +4,10 @@ Docker image of lean4 theorem prover.
 
 ## Getting Started
 
-| Image Tag                       | base   | Image size | Platform        |
-| ------------------------------- | ------ | ---------- | --------------- |
-| ghcr.io/seasawher/lean4:nightly | ubuntu | 1.0 GB     | GitHub Packages |
-| ghcr.io/seasawher/lean4:stable  | ubuntu | 0.8 GB     | GitHub Packages |
+| Image Tag                       | base   | Platform        |
+| ------------------------------- | ------ | --------------- |
+| ghcr.io/seasawher/lean4:nightly | ubuntu | GitHub Packages |
+| ghcr.io/seasawher/lean4:stable  | ubuntu | GitHub Packages |
 
 ### Pull
 
