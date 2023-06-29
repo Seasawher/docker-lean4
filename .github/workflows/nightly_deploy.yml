@@ -3,8 +3,10 @@ name: Nightly Image Deploy
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - 'Dockerfile'
+      - '**.yml'
   schedule:
-    # At the end of every day
     - cron: "0 0 * * *"
 
 env:
