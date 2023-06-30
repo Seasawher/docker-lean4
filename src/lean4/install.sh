@@ -1,10 +1,7 @@
 #!/bin/sh
 set -e
 
-echo "Activating feature 'hello'"
-
-GREETING=${GREETING:-undefined}
-echo "The provided greeting is: $GREETING"
+echo "Activating feature 'lean4-nightly'"
 
 # The 'install.sh' entrypoint script is always executed as the root user.
 #
@@ -18,12 +15,16 @@ echo "The effective dev container remoteUser's home directory is '$_REMOTE_USER_
 echo "The effective dev container containerUser is '$_CONTAINER_USER'"
 echo "The effective dev container containerUser's home directory is '$_CONTAINER_USER_HOME'"
 
-cat > /usr/local/bin/hello \
+cat > /usr/local/bin/lean4-feature \
 << EOF
 #!/bin/sh
-RED='\033[0;91m'
-NC='\033[0m' # No Color
-echo "\${RED}${GREETING}, \$(whoami)!\${NC}"
+ELAN_HOME=/usr/local/elan
+curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y --no-modify-path --default-toolchain leanprover/lean4:nightly; \
+    chmod -R a+w $ELAN_HOME; \
+    elan --version; \
+    lean --version; \
+    leanc --version; \
+    lake --version;
 EOF
 
-chmod +x /usr/local/bin/hello
+chmod +x /usr/local/bin/lean4-feature
