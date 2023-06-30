@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-echo "Activating feature 'lean4-nightly'"
+echo "Activating feature 'lean4_nightly'"
 
 # The 'install.sh' entrypoint script is always executed as the root user.
 #

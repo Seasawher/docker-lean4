@@ -1,6 +1,6 @@
 {
-    "name": "lean4-nightly",
-    "id": "lean4-nightly",
+    "name": "lean4_nightly",
+    "id": "nightly",
     "version": "0.0.1",
     "description": "elan and lean4:nightly",
     "installsAfter": [
