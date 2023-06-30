@@ -1,0 +1,17 @@
+{
+    "name": "${containerWorkspaceFolder}",
+    // choose base image
+    "image": "ubuntu:latest",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/seasawher/docker-lean4/nightly:latest": {}
+    },
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            "settings": {},
+            // Add the IDs of extensions you want installed when the container is created.
+            "extensions": []
+        }
+    }
+}

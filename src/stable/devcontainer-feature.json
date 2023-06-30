@@ -1,8 +1,8 @@
 {
-    "name": "lean4_nightly",
-    "id": "nightly",
+    "name": "lean4_stable",
+    "id": "stable",
     "version": "0.0.1",
-    "description": "elan and lean4:nightly",
+    "description": "elan and lean4:stable",
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
     ]
