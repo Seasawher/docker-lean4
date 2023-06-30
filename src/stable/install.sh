@@ -19,6 +19,7 @@ cat > /usr/local/bin/lean4-feature \
 << EOF
 #!/bin/sh
 ELAN_HOME=/usr/local/elan
+export PATH="/usr/local/elan/bin:$PATH"
 curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y --no-modify-path --default-toolchain leanprover/lean4:nightly; \
     chmod -R a+w $ELAN_HOME; \
     elan --version; \
