@@ -59,28 +59,3 @@ create a `devcontainer.json` file with the following content.
     }
 }
 ```
-
-### Dev Container Feature
-
-Create a `.devcontainer` directory in the root of your workspace and
-create a `devcontainer.json` file with the following content.
-
-```jsonc
-{
-    "name": "${containerWorkspaceFolder}",
-    // choose base image
-    "image": "",
-    "features": {
-        "ghcr.io/devcontainers/features/git:1": {},
-        "ghcr.io/seasawher/docker-lean4/nightly:latest": {}
-    },
-    "customizations": {
-        // Configure properties specific to VS Code.
-        "vscode": {
-            "settings": {},
-            // Add the IDs of extensions you want installed when the container is created.
-            "extensions": []
-        }
-    }
-}
-```
