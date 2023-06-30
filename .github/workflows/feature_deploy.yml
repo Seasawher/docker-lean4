@@ -6,6 +6,8 @@ on:
     paths:
       - 'src/**'
       - '**/feature_deploy.yml'
+  schedule:
+    - cron: "10 0 * * *"
 
 jobs:
   deploy:
