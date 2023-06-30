@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
     paths:
       - 'Dockerfile'
-      - '**.yml'
+      - '**/nightly_deploy.yml'
   schedule:
     - cron: "0 0 * * *"
 
